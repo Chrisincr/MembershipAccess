@@ -1,0 +1,24 @@
+{
+  "name": "membershipaccess",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Chrisincr/MembershipAccess#readme",
+  "bugs": {
+    "url": "https://github.com/Chrisincr/MembershipAccess/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chrisincr/MembershipAccess.git"
+  },
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev ./membershipaccess"
+  },
+  "dependencies": {
+    "@types/pg": "^8.20.0",
+    "next-auth": "^4.24.14",
+    "pg": "^8.22.0"
+  }
+}
