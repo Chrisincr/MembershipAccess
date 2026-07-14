@@ -17,6 +17,7 @@
     "dev": "next dev ./membershipaccess"
   },
   "dependencies": {
+    "@auth/pg-adapter": "^1.11.2",
     "@types/pg": "^8.20.0",
     "next-auth": "^4.24.14",
     "pg": "^8.22.0"

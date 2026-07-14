@@ -1,18 +1,14 @@
 import type { NextApiRequest, NextApiResponse } from "next"
+import { authConfig } from "@/app/auth"
 import NextAuth from "next-auth"
 import { NextAuthOptions } from "next-auth"
-
-export const authOptions: NextAuthOptions = {
-    providers: [
-        // Add your authentication providers here
-    ],
-    secret: process.env.AUTH_SECRET,
-
-}
+import google from "next-auth/providers/google"
 
 
-export default async function auth(req: NextApiRequest, res: NextApiResponse) {
-    return await NextAuth(req, res, {
-        ...authOptions,
-    })
-}
+
+
+const handler = NextAuth(authConfig)
+
+export { handler as GET, handler as POST }
+
+
